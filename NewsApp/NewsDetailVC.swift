@@ -1,8 +1,9 @@
 //
 //  NewsDetailVC.swift
-//  Swift_MVP
+//  NewsApp
 //
-//  Created by Bhoomi Kathiriya on 08/07/18.
+//  Created by Bhoomi Kathiriya on 20/10/18.
+//  Copyright © 2018 Bhoomi Kathiriya. All rights reserved.
 //
 
 import UIKit
@@ -10,7 +11,7 @@ import UIKit
 class NewsDetailVC: UIViewController
 {
   
-    var objNews : News?
+    var objNews : NewsViewModel?
     
     var imgNews : UIImage?
     @IBOutlet weak var tblNewsDetail : UITableView?
@@ -25,7 +26,7 @@ class NewsDetailVC: UIViewController
       
         self.title =  "News Detail"
        tblNewsDetail?.estimatedRowHeight = 100
-        tblNewsDetail?.rowHeight = UITableViewAutomaticDimension
+        tblNewsDetail?.rowHeight = UITableView.automaticDimension
         
     }
 
@@ -52,11 +53,11 @@ class NewsDetailVC: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-    func setNewsDetail(news:News)
+    func setNewsDetail(news:NewsViewModel)
     {
         
         self.objNews = news
-        print("news object is",self.objNews?.strTitle)
+        print("news object is",self.objNews?.name)
     }
     
     
@@ -116,7 +117,7 @@ extension NewsDetailVC : UITableViewDelegate,UITableViewDataSource
         
         
         
-        let strURL = String(format: "%@",(self.objNews?.strImageURL)!)
+        let strURL = String(format: "%@",(self.objNews?.strURL)!)
         
         
         print("string url is",strURL)
@@ -131,15 +132,15 @@ extension NewsDetailVC : UITableViewDelegate,UITableViewDataSource
         
         let url = URL(string: strURL)
         
-        if((objNews?.strAuthor?.count)! > 0)
+        if((objNews?.strBy?.count)! > 0)
         {
-        cell.lblAuthor?.text =  NSString(format:"Author: %@",(objNews?.strAuthor!)!) as String
+        cell.lblAuthor?.text =  NSString(format:"Author: %@",(objNews?.strBy!)!) as String
         
         }
         
-        if((objNews?.strTitle?.count)! > 0)
+        if((objNews?.name?.count)! > 0)
         {
-            cell.lblTitle?.text =  NSString(format:"Title: %@",(objNews?.strTitle!)!) as String
+            cell.lblTitle?.text =  NSString(format:"Title: %@",(objNews?.name!)!) as String
             
         }
         
@@ -149,15 +150,19 @@ extension NewsDetailVC : UITableViewDelegate,UITableViewDataSource
             
         }
         
-        if((objNews?.strPublishedat?.count)! > 0)
+        if((objNews?.strPublishedDate?.count)! > 0)
         {
-            cell.lblPublishedAt?.text =  NSString(format:"Published At: %@",(objNews?.strPublishedat!)!) as String
+            cell.lblPublishedAt?.text =  NSString(format:"Published At: %@",(objNews?.strPublishedDate!)!) as String
             
         }
+        
+        if(objNews?.strNewsURL != nil)
+        {
         if((objNews?.strNewsURL?.count)! > 0)
         {
             cell.lblNewsURL?.text =  NSString(format:"URL: %@",(objNews?.strNewsURL!)!) as String
             
+        }
         }
         
 //        else

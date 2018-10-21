@@ -6,18 +6,18 @@
 //  Copyright © 2018 Bhoomi Kathiriya. All rights reserved.
 //
 import Foundation
-
-@objc protocol LocationView: NSObjectProtocol {
+import UIKit
+@objc protocol NewsView: NSObjectProtocol {
 	
     @objc optional func startLoading()
 	@objc optional func finishLoading()
 
 	
-    @objc optional func setWeatherInfo(objWeatherInfo : WeatherInfo)
+   // @objc optional func setWeatherInfo(objWeatherInfo : WeatherInfo)
 
-    @objc optional func setWeeklyForecastData(arrWeatherInfo: [WeatherInfo])
+    //@objc optional func setWeeklyForecastData(arrWeatherInfo: [WeatherInfo])
     
-    @objc optional func setLocationData(location: [Location])
+     func setNewsData(news: [NewsViewModel])
 
 
    

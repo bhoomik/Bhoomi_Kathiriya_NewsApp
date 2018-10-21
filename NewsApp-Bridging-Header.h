@@ -8,6 +8,7 @@
 
 #ifndef NewsApp_Bridging_Header_h
 #define NewsApp_Bridging_Header_h
+#import "UIImageView+WebCache.h"
 
 
 #endif /* NewsApp_Bridging_Header_h */

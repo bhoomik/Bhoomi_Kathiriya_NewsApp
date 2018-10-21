@@ -7,7 +7,9 @@
 
 import Foundation
 
-class LocationService {
+typealias JSONDictionary = [String:Any]
+
+class NewsService {
 	
 	
     

@@ -13,7 +13,7 @@ class WebViewVC: UIViewController
     
     
     @IBOutlet weak var webView  : UIWebView?
-    var objNews : News?
+    var objNews : NewsViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,19 +28,19 @@ class WebViewVC: UIViewController
     
     
     
-    func setNewsDetail(news:News)
+    func setNewsDetail(news:NewsViewModel)
     {
-       print("news object web view is",news.strNewsURL)
+       print("news object web view is",news.strURL)
         self.objNews = news
     }
     
     
     func loadNewsData()
     {
-        print("2news object web view is",self.objNews?.strNewsURL)
+        print("2news object web view is",self.objNews?.strURL)
         
         
-        let url = URL (string: (self.objNews?.strNewsURL!)!)
+        let url = URL (string: (self.objNews?.strURL!)!)
         let requestObj = URLRequest(url: url!)
         webView?.loadRequest(requestObj)
         
