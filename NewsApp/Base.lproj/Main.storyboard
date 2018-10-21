@@ -59,23 +59,21 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNy-8Y-xXY">
                                                     <rect key="frame" x="100" y="35.5" width="232" height="128"/>
-                                                    <color key="backgroundColor" red="1" green="0.2819006047" blue="0.95817017360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9F7-0U-1PV">
-                                                    <rect key="frame" x="212" y="168.5" width="120" height="21"/>
-                                                    <color key="backgroundColor" red="0.92837173559999997" green="1" blue="0.016072088679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="232" y="168.5" width="100" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="120" id="7sl-Fh-IPY"/>
+                                                        <constraint firstAttribute="width" constant="100" id="7sl-Fh-IPY"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cal.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Ko-zk-KAi">
-                                                    <rect key="frame" x="177" y="166.5" width="25" height="25"/>
+                                                    <rect key="frame" x="197" y="166.5" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="prp-x2-DlF"/>
                                                         <constraint firstAttribute="width" constant="25" id="udA-ke-w7E"/>

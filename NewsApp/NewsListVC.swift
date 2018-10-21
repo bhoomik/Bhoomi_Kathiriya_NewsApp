@@ -10,6 +10,8 @@ import UIKit
 
 class NewsListVC: UIViewController {
 
+    let activityIndicator = ActivityIndicator()
+
     @IBOutlet weak var tblNewsList  : UITableView?
     private var newsservice :NewsService!
     private var newseListViewModel :NewsListViewModel!
@@ -24,6 +26,10 @@ class NewsListVC: UIViewController {
     
 
     func commonInit() {
+        
+        self.view.addSubview(self.activityIndicator)
+        self.activityIndicator.show()
+       // self.activityIndicator.isHidden = true
         
         self.title = "News List"
         self.newsservice = NewsService()
@@ -58,6 +64,18 @@ extension NewsListVC: NewsView
             
         }
         print("update news data",self.arrNewsVM)
+    }
+    
+    func startLoading() {
+        self.activityIndicator.show()
+        self.activityIndicator.isHidden = false
+    }
+    
+    func finishLoading()
+    {
+        self.activityIndicator.hide()
+        self.activityIndicator.isHidden = true
+
     }
     
     

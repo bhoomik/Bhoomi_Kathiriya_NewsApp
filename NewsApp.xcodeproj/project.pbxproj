@@ -59,6 +59,7 @@
 		0E04827D217B659700B3CFC2 /* ImageViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04827B217B659600B3CFC2 /* ImageViewVC.swift */; };
 		0E04827E217B659700B3CFC2 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04827C217B659600B3CFC2 /* WebViewVC.swift */; };
 		0E048280217B65DB00B3CFC2 /* NewsDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04827F217B65DB00B3CFC2 /* NewsDetailCell.swift */; };
+		0E048282217CB06100B3CFC2 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E048281217CB06000B3CFC2 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +169,7 @@
 		0E04827B217B659600B3CFC2 /* ImageViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewVC.swift; sourceTree = "<group>"; };
 		0E04827C217B659600B3CFC2 /* WebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
 		0E04827F217B65DB00B3CFC2 /* NewsDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailCell.swift; sourceTree = "<group>"; };
+		0E048281217CB06000B3CFC2 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 				0E04820C217B193300B3CFC2 /* NewsService.swift */,
 				0E0481DA217B14AC00B3CFC2 /* MasterViewController.swift */,
 				0E048218217B355600B3CFC2 /* NewsView.swift */,
+				0E048281217CB06000B3CFC2 /* ActivityIndicator.swift */,
 				0E0481DC217B14AC00B3CFC2 /* DetailViewController.swift */,
 				0E048212217B1F3100B3CFC2 /* Helper.swift */,
 				0E048279217B657700B3CFC2 /* NewsDetailVC.swift */,
@@ -491,6 +494,7 @@
 				0E0481D9217B14AC00B3CFC2 /* NewsApp.xcdatamodeld in Sources */,
 				0E048275217B5D9700B3CFC2 /* SDWebImageWebPCoder.m in Sources */,
 				0E048266217B5D9700B3CFC2 /* SDWebImageCoder.m in Sources */,
+				0E048282217CB06100B3CFC2 /* ActivityIndicator.swift in Sources */,
 				0E04826A217B5D9700B3CFC2 /* SDWebImageDownloaderOperation.m in Sources */,
 				0E048209217B157200B3CFC2 /* NewsListVC.swift in Sources */,
 				0E048211217B1F2300B3CFC2 /* Common.swift in Sources */,

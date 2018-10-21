@@ -38,7 +38,9 @@ class NewsListViewModel: NSObject {
         if(Helper.sharedInstance.checkIntenetConnection() == true)
         {
             
-            //self.locationView?.startLoading!()
+        
+            print("newsview is",self.newsView)
+            self.newsView?.startLoading!()
             
             
             let strURL = String(format: "%@%@",kBaseURL,kAPIKey)
@@ -203,21 +205,21 @@ class NewsListViewModel: NSObject {
                 self.locationView?.setWeatherInfo!(objWeatherInfo: objWeatherInfo)
                 
                 
-                //print("arrtemp count",arrTemp?.count)
+                //print("arrtemp count",arrTemp?.count)*/
                 
                 
                 
                 
                 DispatchQueue.main.async { () -> Void in
                     
-                    self.locationView?.finishLoading!()
-                }*/
+                    self.newsView?.finishLoading!()
+                }
                 
             }, andFailureBlock:   { (failure) -> Void in
-                  /*DispatchQueue.main.async { () -> Void in
-                    self.locationView?.finishLoading!()
+                  DispatchQueue.main.async { () -> Void in
+                    self.newsView?.finishLoading!()
                     
-                }*/
+                }
             })
             
             
