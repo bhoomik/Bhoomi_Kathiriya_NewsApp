@@ -26,6 +26,7 @@ class News: NSObject {
         let publisheddate = dictionary["published_date"] as? String
         let newsURL = dictionary["url"] as? String
 
+        print("newsurl is",newsURL)
         let arrMedia : NSArray?  = dictionary["media"] as? NSArray
         
         print("arrmedia is",arrMedia)

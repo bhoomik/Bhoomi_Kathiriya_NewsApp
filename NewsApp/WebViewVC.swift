@@ -1,9 +1,9 @@
 //
 //  WebViewVC.swift
-//  Swift_MVP
+//  NewsApp
 //
-//  Created by Bhoomi Kathiriya on 08/07/18.
-
+//  Created by Bhoomi Kathiriya on 20/10/18.
+//  Copyright © 2018 Bhoomi Kathiriya. All rights reserved.
 //
 
 import UIKit
@@ -30,17 +30,17 @@ class WebViewVC: UIViewController
     
     func setNewsDetail(news:NewsViewModel)
     {
-       print("news object web view is",news.strURL)
+       print("news object web view is",news.strNewsURL)
         self.objNews = news
     }
     
     
     func loadNewsData()
     {
-        print("2news object web view is",self.objNews?.strURL)
+        print("2news object web view is",self.objNews?.strNewsURL)
         
         
-        let url = URL (string: (self.objNews?.strURL!)!)
+        let url = URL (string: (self.objNews?.strNewsURL!)!)
         let requestObj = URLRequest(url: url!)
         webView?.loadRequest(requestObj)
         

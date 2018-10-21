@@ -155,7 +155,7 @@ extension NewsDetailVC : UITableViewDelegate,UITableViewDataSource
             cell.lblPublishedAt?.text =  NSString(format:"Published At: %@",(objNews?.strPublishedDate!)!) as String
             
         }
-        
+        print("cell for row news url is",objNews?.strNewsURL)
         if(objNews?.strNewsURL != nil)
         {
         if((objNews?.strNewsURL?.count)! > 0)

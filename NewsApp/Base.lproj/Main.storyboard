@@ -248,6 +248,7 @@
                     <connections>
                         <outlet property="tblNewsDetail" destination="tFL-Mc-3qW" id="uDa-T5-YUX"/>
                         <segue destination="mpb-h9-9wH" kind="show" identifier="NewsDetailToImage" id="ZWf-7h-FPt"/>
+                        <segue destination="V0W-7b-egy" kind="show" identifier="NewsDetailToWebURL" id="yaM-4h-C0K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCz-hy-URH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -257,7 +258,7 @@
         <!--Image ViewVC-->
         <scene sceneID="JQI-Qk-SNS">
             <objects>
-                <viewController id="mpb-h9-9wH" customClass="ImageViewVC" customModule="Swift_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mpb-h9-9wH" customClass="ImageViewVC" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3aT-Jw-fqW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,6 +301,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCd-OI-5bn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2799" y="837"/>
+        </scene>
+        <!--Web ViewVC-->
+        <scene sceneID="TMm-b7-mOK">
+            <objects>
+                <viewController id="V0W-7b-egy" customClass="WebViewVC" customModule="Swift_MVP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VQM-ua-pIN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-G1-CbT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="plo-0h-bsO" firstAttribute="bottom" secondItem="QN5-G1-CbT" secondAttribute="bottom" id="aRN-rR-K4p"/>
+                            <constraint firstItem="QN5-G1-CbT" firstAttribute="top" secondItem="plo-0h-bsO" secondAttribute="top" id="dIT-Kv-1Oj"/>
+                            <constraint firstItem="QN5-G1-CbT" firstAttribute="leading" secondItem="plo-0h-bsO" secondAttribute="leading" id="ojA-Xc-WNP"/>
+                            <constraint firstItem="QN5-G1-CbT" firstAttribute="trailing" secondItem="plo-0h-bsO" secondAttribute="trailing" id="okM-OU-fnB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="plo-0h-bsO"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="QN5-G1-CbT" id="Tx6-b4-vA5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hEG-Ay-fzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4138" y="179"/>
         </scene>
     </scenes>
     <resources>

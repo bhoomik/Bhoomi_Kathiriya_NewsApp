@@ -261,5 +261,6 @@ class NewsViewModel : NSObject {
         self.strBy = news.strBy
         self.strPublishedDate = news.strPubhisedDate
         self.strURL = news.strURL
+        self.strNewsURL = news.strNewsURL
     }
 }
